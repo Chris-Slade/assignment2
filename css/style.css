@@ -1,0 +1,81 @@
+head, body {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  color: #2A2A2A;
+  background: #EEE;
+}
+
+#demoForm {
+  font-family: sans-serif;
+  background: #DDD;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+}
+
+#demoForm label {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+#demoForm input {
+  margin: 10px;
+}
+
+#demoForm input[type=text], #demoForm textarea, #demoForm input[type=file] {
+  display: block;
+  width: 75%;
+  margin: auto;
+}
+
+#demoForm input[type=text], #demoForm textarea {
+  background: #EEE;
+  border-radius: 10px 5px 10px 5px;
+  font-size: 12pt;
+  color: #2A2A2A;
+  padding: .5em;
+}
+
+#demoForm input:hover[type=text], #demoForm textarea:hover {
+  background: #FFF;
+}
+
+#demoForm input[type=submit], #demoForm input[type=file] {
+  display: block;
+  margin: auto;
+}
+
+#demoForm input:invalid {
+  border: 1px solid red;
+}
+
+#demoForm input:valid {
+}
+
+#demoForm input[type=range] {
+  background: transparent;
+  cursor: pointer;
+  width: 75%;
+}
+
+::-moz-placeholder {
+  font-style: italic;
+}
+
+#demoForm input[type=file] {
+  display: none;
+}
+
+label[for=fileInput] {
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block;
+  font-style: italic;
+  font-family: serif;
+  margin: 20px;
+  padding: 6px 12px;
+}
