@@ -66,10 +66,6 @@ head, body {
   font-style: italic;
 }
 
-#demoForm input[type=file] {
-  display: none;
-}
-
 label[for=fileInput] {
   border: 1px solid #ccc;
   cursor: pointer;
