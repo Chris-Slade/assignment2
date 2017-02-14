@@ -13,48 +13,50 @@
       <h1>Input Form Demo</h1>
     </header>
 
-  <div id="formContainer">
-    <header>
-      <h2>Upload a file</h2>
-      <h3>(Not really though)</h3>
-    </header>
-    <form id="demoForm" action="" method="post" enctype="multipart/form-data">
+    <noscript><p>This form only works with JavaScript enabled!</p></noscript>
 
-      <label>
-        Enter the file's title (25 chars max)
-        <input type="text" id="titleInput" name="title"
-          required="true" placeholder="Title">
-        </input>
-      </label>
-      <br />
+    <div id="formContainer">
+      <header>
+        <h2>Upload a file</h2>
+        <h3>(Not really though)</h3>
+      </header>
+      <form id="demoForm" action="" method="post" enctype="multipart/form-data">
 
-      <label>
-        Enter a description (optional)
-        <textarea id="descInput" name="desc" spellcheck="true"
-          placeholder="Description" wrap="soft" value=""></textarea>
-      </label>
-      <br />
+        <label>
+          Enter the file's title (25 chars max)
+          <input type="text" id="titleInput" name="title"
+            required="true" placeholder="Title">
+          </input>
+        </label>
+        <br />
 
-      <label>
-        Select how much you like the file from 1 to 5<br />
-        <input type="radio" name="rating" value="1" checked="checked">1</input>
-        <input type="radio" name="rating" value="2" checked="checked">2</input>
-        <input type="radio" name="rating" value="3" checked="checked">3</input>
-        <input type="radio" name="rating" value="4" checked="checked">4</input>
-        <input type="radio" name="rating" value="5" checked="checked">5</input>
-      </label>
-      <br />
+        <label>
+          Enter a description (optional)
+          <textarea id="descInput" name="desc" spellcheck="true"
+            placeholder="Description" wrap="soft" value=""></textarea>
+        </label>
+        <br />
 
-      <label for="fileInput">Select file to upload</label>
-        <input type="file" id="fileInput" name="file" required="true"></input>
-      <br />
+        <label>
+          Select how much you like the file from 1 to 5<br />
+          <input type="radio" name="rating" value="1">1</input>
+          <input type="radio" name="rating" value="2">2</input>
+          <input type="radio" name="rating" value="3"checked="checked">3</input>
+          <input type="radio" name="rating" value="4">4</input>
+          <input type="radio" name="rating" value="5">5</input>
+        </label>
+        <br />
 
-      <input type="submit" id="submitButton" name="submit" value="Submit"></input>
+        <label for="fileInput">Select file to upload</label>
+          <input type="file" id="fileInput" name="file" required="true"></input>
+        <br />
 
-    </form>
+        <input type="submit" id="submitButton" name="submit" value="Submit"></input>
 
-    <div id="afterSubmit"></div>
+      </form>
 
-  </div>
+      <div id="afterSubmit"></div>
+
+    </div>
   </body>
 </html>
